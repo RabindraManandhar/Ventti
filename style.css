@@ -1,0 +1,126 @@
+* {}
+
+html, body {
+  margin: auto;
+  scroll-behavior: smooth;
+}
+
+#game {
+  height: 700px;
+  margin: 0 auto;
+  position: relative;
+  width: 1500px;
+  background: transparent url('https://www.gamblingsites.com/wp-content/uploads/2017/12/Blackjack-Table-and-Money.png') 0 0 repeat;
+}
+
+#container {
+  height: 600px;
+  width: 800px;
+  background-color: none;
+  margin: 0;
+  padding-left: 350px;
+}
+
+h1 {
+  height: 50px;
+  width: 320px;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  margin: 20px auto;
+  margin-bottom: 0;
+  padding: 40px 10px 5px;
+  color: #C5B358;
+  text-shadow: 2px 2px gold;
+}
+
+h3 {
+  font-size: 40px;
+  color: #C5B358;
+  text-shadow: 2px 2px gold;
+  margin: 0;
+  text-align: center;
+  padding-bottom: 15px;
+}
+
+#main_board {
+  display: flex;
+  height: calc(100% - 173px);
+  width: 100%;
+  background-color: white;
+}
+
+#playerBox {
+  flex: 1;
+  height: 100%;
+  width: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+#dealerBox {
+  flex: 1;
+  height: 100%;
+  width: 50%;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  background-color: white;
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+p {
+  text-decoration: underline;
+}
+
+.button_board {
+  height: 100px;
+  width: 100%;
+  text-align: center;
+  background-color: #C5B358;
+}
+
+button {
+  height: 40px;
+  width: 80px;
+  margin: 10px;
+  text-align: center;
+  background-color: white;
+  color: grey;
+  outline: none;
+  border-radius: 10px;
+  font-size: 20px;
+}
+
+button:active {
+  box-shadow: 1px 1px 1px 1px gold;
+}
+
+button:hover {
+  color: black;
+}
+
+#result {
+  font-size: 35px;
+  text-align: center;
+  font-weight: bold;
+  color: green;
+  text-transform: uppercase;
+}
+
+#player_cards {
+  padding: 40px;
+}
+
+#dealer_cards {
+  padding: 40px;
+}
