@@ -1,69 +1,80 @@
-* {}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 html, body {
-  margin: auto;
   scroll-behavior: smooth;
 }
 
+.intro {
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.box {
+  margin: 2vh 200px;
+  line-height: 1.5;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.box h1 {
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.box p {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.box ol {
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.box ol li {
+  font-size: 18px;
+}
+
+.box ol li ol {
+  padding-top: 5px;
+  padding-left: 20px;
+}
+
+.box ol li ol li {
+  font-size: 16px;
+}
+
 #game {
-  height: 700px;
-  margin: 0 auto;
+  height: 450px;
+  width: 1250px;
+  margin: 10px auto;
   position: relative;
-  width: 1500px;
   background: transparent url('https://www.gamblingsites.com/wp-content/uploads/2017/12/Blackjack-Table-and-Money.png') 0 0 repeat;
 }
 
 #container {
-  height: 600px;
-  width: 800px;
+  height: 500px;
+  width: 1000px;
   background-color: none;
-  margin: 0;
-  padding-left: 350px;
-}
-
-h1 {
-  height: 50px;
-  width: 320px;
-  font-size: 40px;
-  font-weight: bold;
-  text-align: center;
-  margin: 20px auto;
-  margin-bottom: 0;
-  padding: 40px 10px 5px;
-  color: #C5B358;
-  text-shadow: 2px 2px gold;
-}
-
-h3 {
-  font-size: 40px;
-  color: #C5B358;
-  text-shadow: 2px 2px gold;
-  margin: 0;
-  text-align: center;
-  padding-bottom: 15px;
+  padding-top: 10px;
+  padding-left: 200px;
 }
 
 #main_board {
   display: flex;
-  height: calc(100% - 173px);
+  height: calc(100% - 175px);
   width: 100%;
   background-color: white;
 }
 
-#playerBox {
-  flex: 1;
-  height: 100%;
-  width: 50%;
-  font-size: 30px;
-  font-weight: bold;
-  text-align: center;
-  background-color: white;
-  border-top: 1px solid black;
-  border-right: 1px solid black;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
+#playerBox,
 #dealerBox {
   flex: 1;
   height: 100%;
@@ -71,15 +82,12 @@ h3 {
   font-size: 30px;
   font-weight: bold;
   text-align: center;
+  text-decoration: underline;
   background-color: white;
   border-top: 1px solid black;
-  border-left: 1px solid black;
+  border-right: 1px solid black;
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
-}
-
-p {
-  text-decoration: underline;
 }
 
 .button_board {

@@ -36,6 +36,7 @@ function pickCardPlayer() {
   document.getElementById("player").innerHTML = "The sum of player's cards is " + playerSum;
   if (playerSum > 21) {
     document.getElementById("play").disabled = true;
+    document.getElementById("show").disabled = true;
     document.getElementById("player").innerHTML = "You LOST. " + "Your score is " + playerSum;
   }
 }
@@ -49,6 +50,8 @@ function pickCardDealer() {
     dealer.push(cards[0]);
     var num = cards.shift();
     dealerSum += num;
+
+    // conditions to declare a winner
   } while (dealerSum < playerSum);
   document.getElementById("dealer_cards").innerHTML = "Your cards is " + dealer;
   document.getElementById("dealer").innerHTML = "The sum of dealer's cards is " + dealerSum;
@@ -77,8 +80,6 @@ function pickCardDealer() {
     document.getElementById("play").disabled = true;
     document.getElementById("show").disabled = true;
   }
-
-
 }
 
 function playAgainFunction() {
